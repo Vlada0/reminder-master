@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="4sp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <Button
+        style="@style/widget"
+        android:id="@+id/add_task"
+        android:text="New Task"
+        android:onClick="onAddClick" />
+
+    <CalendarView
+        android:layout_width="wrap_content"
+        android:layout_height="326dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/bg_calen" />
+
+    <ListView
+        android:id="@+id/task_list"
+        style="@style/widget"
+        android:layout_width="match_parent"
+        android:layout_height="219dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="250dp"
+        android:hint="Enter key word"
+        android:textColor="@color/cardview_light_background" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginLeft="300dp"
+        android:onClick="Search"
+        android:text="Search" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="276dp"
+        android:layout_height="47dp"
+android:layout_marginLeft="20dp"
+        android:layout_marginRight="200dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/cardview_light_background" />
+
+
+</LinearLayout>
